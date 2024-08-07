@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário de Reserva de Viagem</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados da Reserva</legend>
+            <input type="text" name="nome" placeholder="Nome"><br><br>
+            <input type="email" name="email" placeholder="E-mail"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Serviços Solicitados</legend>
+            <input type="checkbox" name="compraPassagens">Compra de Passagens<br>
+            <input type="checkbox" name="reservaHospedagem">Reserva de Hospedagem<br>
+            <input type="checkbox" name="alugelVeiculos">Aluguel de Veículos<br>
+        </fieldset>
+        <fieldset>
+            <legend>Formas de Pagamento</legend>
+            <input type="radio" name="formaPagamento">Cartão de Crédito<br>
+            <input type="radio" name="formaPagamento">Boleto<br>
+            <input type="radio" name="formaPagamento">PIX<br>
+        </fieldset>
+        <fieldset>
+            <legend>Prazo de Pagamento</legend>
+            <select name="prazoPagamento">
+                <option value="aVista">A Vista</option>
+                <option value="5x">5 Vezes Sem Juros</option>
+                <option value="10x">10 Vezes Sem Juros</option><br>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend>Observações/Comentários</legend>
+            <textarea name="comentarios" rows="5"></textarea><br><br>
+        </fieldset>
+        <input type="submit" value="Reservar">
+        </form>
+        
+        
+    </body>
+</html>
