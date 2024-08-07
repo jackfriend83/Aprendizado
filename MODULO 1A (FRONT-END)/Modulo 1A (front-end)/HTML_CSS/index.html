@@ -32,15 +32,15 @@ vacations. Here is a breakdown of the structure and content of the HTML document
             consectetur. Ut magna nisi, tincidunt a pellentesque at, imperdiet eu felis. Cras rhoncus sagittis dolor.
             Pellentesque ultricies porttitor urna tristique tempor.</p>
         <figure>
-            <img src="download.jpg" alt="Cachoeira"><br>
+            <img src="img/download.jpg" alt="Cachoeira"><br>
             <figcapture>Cachoeiras</figcapture>
         </figure>
         <figure>
-            <img src="fernando-de-noronha-paisagens-naturais-de-praia-1.webp" alt="Fernando de Noronha"><br>
+            <img src="img/fernando-de-noronha-paisagens-naturais-de-praia-1.webp" alt="Fernando de Noronha"><br>
             <figcapture>Fernando de Noronha</figcapture>
         </figure>
         <figure>
-            <img src="caruaru.jpg" alt="Caruaru - Pernambuco"><br>
+            <img src="img/caruaru.jpg" alt="Caruaru - Pernambuco"><br>
             <figcapture>Caruaru</figcapture>
         </figure>
 
@@ -50,6 +50,48 @@ vacations. Here is a breakdown of the structure and content of the HTML document
         Seu navegador não suporta o vídeo. <a href="videos/COSTA RICA IN 4K 60fps HDR (ULTRA HD).mp4">Clique aqui
             para baixar</a><br><br>
     </video>
+    <section>
+        <h2>Orçamento</h2>
+        <form method="GET" action="">
+            <fieldset>
+                <legend>Dados da Viagem</legend> <!--label é o nome do campo-->
+                <input type="text" name="nome"><br><br> <!--input é o campo-->
+                <label>Email</label><br>
+                <input type="email" name="email"><br><br>
+
+                <label>Data de Ida</label><br>
+                <input type="date" name="dataIda"><br><br>
+
+                <label>Data de Volta</label><br>
+                <input type="date" name="dataVolta"><br><br>
+                <label>Quantidade de Pessoas</label><br>
+                <input type="number" name="qntPessoas" min="1" max="10"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quais serviços deseja contratar</legend>
+                <label>
+                    <input type="checkbox" name="Passagens" value="Passagens">Compra de Passagens<br>
+                </label>
+
+                <label>
+                    <input type="checkbox" name="Hospedagem" value="Hospedagem">Reserva de Hospedagem<br>
+                </label>
+
+                <label>
+                    <input type="checkbox" name="veiculos" value="veiculo">Reseva de Veículos<br><br>
+                </label>
+
+            </fieldset>
+
+            <label>Comentário</label><br>
+            <textarea name="comentario" rows="5"></textarea><br><br>
+
+            <button type="submit">Salvar</button>
+
+
+        </form>
+    </section>
     <section>
         <h2>Taxas e Serviços</h2>
         <p>Veja nossas taxas, para serviços!</p>
@@ -78,8 +120,8 @@ vacations. Here is a breakdown of the structure and content of the HTML document
 
         </table>
     </section>
-    <form> 
-        
+    <form>
+
     </form>
     <br></br>
     <a href="https://www.whatsapp.com" title="whatsapp">Link para nada</a>
