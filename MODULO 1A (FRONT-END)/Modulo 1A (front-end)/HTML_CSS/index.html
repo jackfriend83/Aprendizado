@@ -32,15 +32,15 @@ vacations. Here is a breakdown of the structure and content of the HTML document
             consectetur. Ut magna nisi, tincidunt a pellentesque at, imperdiet eu felis. Cras rhoncus sagittis dolor.
             Pellentesque ultricies porttitor urna tristique tempor.</p>
         <figure>
-            <img src="img/download.jpg" alt="Cachoeira"><br>
+            <img src="img/download.jpg" alt="Cachoeira" width="300px" height="300px"><br>
             <figcapture>Cachoeiras</figcapture>
         </figure>
         <figure>
-            <img src="img/fernando-de-noronha-paisagens-naturais-de-praia-1.webp" alt="Fernando de Noronha"><br>
+            <img src="img/fernando-de-noronha-paisagens-naturais-de-praia-1.webp" alt="Fernando de Noronha" width="300px" height="300px"><br>
             <figcapture>Fernando de Noronha</figcapture>
         </figure>
         <figure>
-            <img src="img/caruaru.jpg" alt="Caruaru - Pernambuco"><br>
+            <img src="img/caruaru.jpg" alt="Caruaru - Pernambuco" width="300px" height="300px"><br>
             <figcapture>Caruaru</figcapture>
         </figure>
 
@@ -83,7 +83,23 @@ vacations. Here is a breakdown of the structure and content of the HTML document
                 </label>
 
             </fieldset>
+            <fieldset>
+                <legend>Escolha a Forma de Pagamento</legend>
+                <label>
+                   <input type="radio" name="formaPagamento" value="cartaoCredito">Cartão de Crédito<br>
+                   <input type="radio" name="formaPagamento" value="Boleto">Boleto<br>
+                   <input type="radio" name="formaPagamento" value="pix">PIX<br>
+                </label>
+            </fieldset>
 
+            <fieldset>
+                <legend>Prazo de Pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="aVista">À Vista</option>
+                    <option value="5x">5x sem juros</option>
+                    <option value="10x">10x com juros de 1% ao mês</option>
+                </select>
+            </fieldset>
             <label>Comentário</label><br>
             <textarea name="comentario" rows="5"></textarea><br><br>
 
